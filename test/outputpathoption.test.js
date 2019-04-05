@@ -9,7 +9,6 @@ const { logo, generate, mkdir, compare, expected } = require('./util');
 test.beforeEach(async t => t.context.root = await mkdir());
 
 test('should allow for overriding the output path of favicons', async t => {
-  const customOutputPath = 'test/path';
   const dist = path.join(t.context.root, 'dist');
 
   await generate({
@@ -20,7 +19,7 @@ test('should allow for overriding the output path of favicons', async t => {
     },
     plugins: [
       new HtmlWebpackPlugin(),
-      new WebappWebpackPlugin({ logo, outputPath: customOutputPath }),
+      new WebappWebpackPlugin({ logo, outputPath: 'test/path' }),
     ],
   });
 
