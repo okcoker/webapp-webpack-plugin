@@ -11,7 +11,6 @@ test.beforeEach(async t => t.context.root = await mkdir());
 test('should allow for overriding the publicPath option', async t => {
   const dist = path.join(t.context.root, 'dist');
 
-  console.log(dist);
   await generate({
     context: t.context.root,
     output: {
@@ -20,7 +19,7 @@ test('should allow for overriding the publicPath option', async t => {
     },
     plugins: [
       new HtmlWebpackPlugin(),
-      new WebappWebpackPlugin({ logo, publicPath: '/public/path/deeper' }),
+      new WebappWebpackPlugin({ logo, publicPath: '/another/path' }),
     ],
   });
 

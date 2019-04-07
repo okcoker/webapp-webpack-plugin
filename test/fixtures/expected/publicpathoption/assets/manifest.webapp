@@ -3,9 +3,9 @@
   "name": null,
   "description": null,
   "icons": {
-    "60": "/public/path/deeper/assets/firefox_app_60x60.png",
-    "128": "/public/path/deeper/assets/firefox_app_128x128.png",
-    "512": "/public/path/deeper/assets/firefox_app_512x512.png"
+    "60": "/another/path/assets/firefox_app_60x60.png",
+    "128": "/another/path/assets/firefox_app_128x128.png",
+    "512": "/another/path/assets/firefox_app_512x512.png"
   },
   "developer": {
     "name": null,
